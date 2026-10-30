@@ -1,0 +1,204 @@
+{
+  "description": "Ground-truth retrieval evaluation benchmark for RFP Intelligence Platform covering Bid1 and Bid2.",
+  "total_cases": 18,
+  "cases": [
+    {
+      "case_id": "eval_01",
+      "bid_id": "Bid1",
+      "category": "deadline_amendment",
+      "question": "What is the new proposal submission deadline for Bid1 after all addendums?",
+      "expected_chunk_ids": ["Bid1_Addendum_2_RFP_JA-207652_p1_c1", "Bid1_Student_and_Staff_Comput_p1_c1"],
+      "expected_document": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["July 9, 2024", "2:00 PM CST", "extend the due date"],
+      "relevance_notes": "Addendum 2 explicitly supersedes the original due date, moving it to July 9, 2024 at 2:00 PM CST."
+    },
+    {
+      "case_id": "eval_02",
+      "bid_id": "Bid1",
+      "category": "deadline_original",
+      "question": "What was the original solicitation due date in the main Dallas ISD RFP document?",
+      "expected_chunk_ids": ["Bid1_JA-207652_Student_and_St_p2_c1", "Bid1_JA-207652_Student_and_St_p2_c2"],
+      "expected_document": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "expected_page": 2,
+      "expected_keywords": ["Solicitation Due", "27-JUN-2024"],
+      "relevance_notes": "Section 1.1 General Information on page 2 sets initial due date as 27-JUN-2024 14:00:00."
+    },
+    {
+      "case_id": "eval_03",
+      "bid_id": "Bid1",
+      "category": "logistics_meeting",
+      "question": "When and where is the pre-proposal meeting held for Dallas ISD computing devices?",
+      "expected_chunk_ids": ["Bid1_JA-207652_Student_and_St_p2_c2"],
+      "expected_document": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "expected_page": 2,
+      "expected_keywords": ["June 10, 2024", "2:00 PM CST", "TEAMS video conference"],
+      "relevance_notes": "Section 1.1 describes TEAMS meeting on June 10, 2024 with meeting ID and passcode."
+    },
+    {
+      "case_id": "eval_04",
+      "bid_id": "Bid1",
+      "category": "commercial_terms",
+      "question": "What is the term of the bid and renewal duration for Dallas ISD?",
+      "expected_chunk_ids": ["Bid1_JA-207652_Student_and_St_p2_c2", "Bid1_JA-207652_Student_and_St_p2_c3"],
+      "expected_document": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "expected_page": 2,
+      "expected_keywords": ["three (3) year agreement", "two (2) successive one (1) year", "five (5) years total"],
+      "relevance_notes": "Section 1.2 Terms and Section 1.3 Requirements specify 3 years + two 1-year extensions up to 5 years."
+    },
+    {
+      "case_id": "eval_05",
+      "bid_id": "Bid1",
+      "category": "technical_amendment",
+      "question": "What is the minimum USB port specification required for display monitors in Addendum 1?",
+      "expected_chunk_ids": ["Bid1_Addendum_1_RFP_JA-207652_p1_c2"],
+      "expected_document": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["USB 3.1 is a minimum requirement", "Display monitor"],
+      "relevance_notes": "Question 1 of Addendum 1 clarifies that USB 3.1 is required and 3.0 is not acceptable."
+    },
+    {
+      "case_id": "eval_06",
+      "bid_id": "Bid1",
+      "category": "logistics_delivery",
+      "question": "When does Dallas ISD anticipate requesting quotes for delivery from awarded vendors?",
+      "expected_chunk_ids": ["Bid1_Addendum_1_RFP_JA-207652_p1_c2"],
+      "expected_document": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["September of 2024", "requesting quotes"],
+      "relevance_notes": "Question 4 of Addendum 1 states Dallas ISD anticipates requesting quotes starting September 2024."
+    },
+    {
+      "case_id": "eval_07",
+      "bid_id": "Bid1",
+      "category": "technical_specs",
+      "question": "What are the minimum CPU and RAM specifications for Tier 1 Staff Basic Laptops?",
+      "expected_chunk_ids": ["Bid1_JA-207652_Student_and_St_p6_c1"],
+      "expected_document": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "expected_page": 6,
+      "expected_keywords": ["Intel i5 CPU", "14th Gen", "Minimum 16GB DDR5 RAM", "Tier 1 Staff Basic Laptop"],
+      "relevance_notes": "Page 6 defines Tier 1 Staff Basic Laptop hardware minimum requirements."
+    },
+    {
+      "case_id": "eval_08",
+      "bid_id": "Bid1",
+      "category": "legal_mwbe",
+      "question": "What is the Dallas ISD aspirational M/WBE goal for professional service contracts?",
+      "expected_chunk_ids": ["Bid1_JA-207652_Student_and_St_p49_c1"],
+      "expected_document": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "expected_page": 49,
+      "expected_keywords": ["M/WBE goal for bond funded professional service contracts is 35%"],
+      "relevance_notes": "Page 49 states the aspirational M/WBE goal is 35%."
+    },
+    {
+      "case_id": "eval_09",
+      "bid_id": "Bid2",
+      "category": "solicitation_id",
+      "question": "What is the PORFP number and eMMA project number for the Maryland Dell laptop bid?",
+      "expected_chunk_ids": ["Bid2_PORFP_-_Dell_Laptop_Fina_p1_c1"],
+      "expected_document": "PORFP_-_Dell_Laptop_Final.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["#E20P4600040", "BPM044557"],
+      "relevance_notes": "Section 1 General Information lists PORFP Number #E20P4600040 and eMMA BPM044557."
+    },
+    {
+      "case_id": "eval_10",
+      "bid_id": "Bid2",
+      "category": "contract_vehicle",
+      "question": "Which master contract vehicle governs the Maryland Dell laptop procurement?",
+      "expected_chunk_ids": ["Bid2_PORFP_-_Dell_Laptop_Fina_p1_c1"],
+      "expected_document": "PORFP_-_Dell_Laptop_Final.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["060B5400007", "Desktop, Laptop and Tablet 2015 Master Contract"],
+      "relevance_notes": "Special Instructions state secondary competition is under master contract 060B5400007."
+    },
+    {
+      "case_id": "eval_11",
+      "bid_id": "Bid2",
+      "category": "product_quantities",
+      "question": "How many Dell Latitude 5550 laptops and Thunderbolt docks are requested?",
+      "expected_chunk_ids": ["Bid2_PORFP_-_Dell_Laptop_Fina_p3_c1"],
+      "expected_document": "PORFP_-_Dell_Laptop_Final.pdf",
+      "expected_page": 3,
+      "expected_keywords": ["30", "SI# CC7802 Dell Latitude 5550", "WD22TB4"],
+      "relevance_notes": "Scope of work table on page 3 requests 30 laptops and 30 docks."
+    },
+    {
+      "case_id": "eval_12",
+      "bid_id": "Bid2",
+      "category": "warranty",
+      "question": "What extended warranty coverage is required for the Dell laptops in Bid2?",
+      "expected_chunk_ids": ["Bid2_PORFP_-_Dell_Laptop_Fina_p3_c1", "Bid2_PORFP_-_Dell_Laptop_Fina_p3_c2"],
+      "expected_document": "PORFP_-_Dell_Laptop_Final.pdf",
+      "expected_page": 3,
+      "expected_keywords": ["Dell Limited Hardware Warranty", "3 Years", "date of delivery"],
+      "relevance_notes": "Functional Area V requires 3 years extended warranty following date of delivery."
+    },
+    {
+      "case_id": "eval_13",
+      "bid_id": "Bid2",
+      "category": "contact_info",
+      "question": "Who is the Maryland Agency Point of Contact POC and what is their email?",
+      "expected_chunk_ids": ["Bid2_PORFP_-_Dell_Laptop_Fina_p2_c1", "Bid2_PORFP_-_Dell_Laptop_Fina_p3_c1"],
+      "expected_document": "PORFP_-_Dell_Laptop_Final.pdf",
+      "expected_page": 3,
+      "expected_keywords": ["Tamaira Hawkins", "thawkins@treasurer.state.md.us"],
+      "relevance_notes": "Section 2 provides agency POC name Tamaira Hawkins and email thawkins@treasurer.state.md.us."
+    },
+    {
+      "case_id": "eval_14",
+      "bid_id": "Bid2",
+      "category": "logistics_delivery",
+      "question": "Within how many days of award must equipment be delivered for Bid2?",
+      "expected_chunk_ids": ["Bid2_PORFP_-_Dell_Laptop_Fina_p2_c1"],
+      "expected_document": "PORFP_-_Dell_Laptop_Final.pdf",
+      "expected_page": 2,
+      "expected_keywords": ["Delivery within 45 days of Award"],
+      "relevance_notes": "Security requirements item 9 on page 2 mandates delivery within 45 days of award."
+    },
+    {
+      "case_id": "eval_15",
+      "bid_id": "Bid2",
+      "category": "hardware_sku",
+      "question": "What processor and SKU are specified for the Dell Latitude 5550 XCTO Base?",
+      "expected_chunk_ids": ["Bid2_Dell_Laptop_Specs_p1_c1"],
+      "expected_document": "Dell_Laptop_Specs.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["Intel Core Ultra 5 125U", "210-BLYZ"],
+      "relevance_notes": "Dell BOM quote lists SKU 210-BLYZ and Intel Core Ultra 5 125U processor."
+    },
+    {
+      "case_id": "eval_16",
+      "bid_id": "Bid2",
+      "category": "legal_affidavit",
+      "question": "Which specific environmental affidavit is required to be submitted for Bid2?",
+      "expected_chunk_ids": ["Bid2_Mercury_Affidavit_p1_c1", "Bid2_PORFP_-_Dell_Laptop_Fina_p2_c1"],
+      "expected_document": "Mercury_Affidavit.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["MERCURY AFFIDAVIT", "Mercury Content"],
+      "relevance_notes": "PORFP item 8 and Mercury_Affidavit.pdf require submission of signed Mercury Affidavit."
+    },
+    {
+      "case_id": "eval_17",
+      "bid_id": "Bid2",
+      "category": "legal_affidavit",
+      "question": "What disclosures are required in the State of Maryland Contract Affidavit?",
+      "expected_chunk_ids": ["Bid2_Contract_Affidavit_p1_c1", "Bid2_Contract_Affidavit_p2_c1"],
+      "expected_document": "Contract_Affidavit.pdf",
+      "expected_page": 1,
+      "expected_keywords": ["AUTHORITY", "CERTIFICATION OF REGISTRATION", "STATE DEPARTMENT OF ASSESSMENTS AND TAXATION"],
+      "relevance_notes": "Contract_Affidavit.pdf affirms legal authority, SDAT registration, and financial disclosures."
+    },
+    {
+      "case_id": "eval_18",
+      "bid_id": "Bid1",
+      "category": "unanswerable_negative",
+      "question": "What are the cryogenic superconducting quantum computing requirements in the RFP?",
+      "expected_chunk_ids": [],
+      "expected_document": "None",
+      "expected_page": 0,
+      "expected_keywords": [],
+      "relevance_notes": "This topic does not exist in any provided document; system must report empty/unsupported."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "run_id": "dd1dca82-4449-4ae5-96c9-508622fc3772",
+  "started_at": "2026-10-30T01:59:16.190495+00:00",
+  "total_steps": 1,
+  "total_latency_ms": 1207.86,
+  "total_tokens_used": 0,
+  "estimated_cost_usd": 0.0,
+  "steps": [
+    {
+      "step_index": 1,
+      "timestamp": "2026-10-30T01:59:17.395710+00:00",
+      "agent_name": "Orchestrator",
+      "action": "extract_bid",
+      "inputs": {
+        "bid_id": "Bid2"
+      },
+      "outputs": {
+        "passed": 19,
+        "failed": 0,
+        "not_found": 1,
+        "details": [
+          "PASS [Bid Number]: Verified with 1 citation(s) (conf=0.98).",
+          "PASS [Title]: Verified with 1 citation(s) (conf=0.98).",
+          "PASS [Due Date]: Verified with 1 citation(s) (conf=0.95).",
+          "PASS [Bid Submission Type]: Verified with 1 citation(s) (conf=0.94).",
+          "PASS [Term of Bid]: Verified with 1 citation(s) (conf=0.93).",
+          "PASS [Pre Bid Meeting]: Confirmed not applicable / not in documents (No pre-bid conference scheduled for this secondary competition.).",
+          "PASS [Installation]: Verified with 1 citation(s) (conf=0.93).",
+          "PASS [Bid Bond Requirement]: Verified with 1 citation(s) (conf=0.92).",
+          "PASS [Delivery Date]: Verified with 1 citation(s) (conf=0.9).",
+          "PASS [Payment Terms]: Verified with 1 citation(s) (conf=0.91).",
+          "PASS [Any Additional Documentation Required]: Verified with 1 citation(s) (conf=0.95).",
+          "PASS [MFG for Registration]: Verified with 1 citation(s) (conf=0.93).",
+          "PASS [Contract or Cooperative to use]: Verified with 1 citation(s) (conf=0.94).",
+          "PASS [Model_no]: Verified with 1 citation(s) (conf=0.95).",
+          "PASS [Part_no]: Verified with 1 citation(s) (conf=0.94).",
+          "PASS [Product]: Verified with 1 citation(s) (conf=0.96).",
+          "PASS [contact_info]: Verified with 1 citation(s) (conf=0.97).",
+          "PASS [company_name]: Verified with 1 citation(s) (conf=0.98).",
+          "PASS [Bid Summary]: Verified with 1 citation(s) (conf=0.95).",
+          "PASS [Product Specification]: Verified with 1 citation(s) (conf=0.95)."
+        ]
+      },
+      "tokens_used": 0,
+      "latency_ms": 0.0,
+      "notes": null
+    }
+  ]
+}

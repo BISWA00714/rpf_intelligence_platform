@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Virtual Envs
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+junit/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local runtime & scratch files
+scratch/
+*.log
+
+# Database lock and local index storage
+data/indices/qdrant/.lock
+data/indices/qdrant_storage/
+data/indices/chroma/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Archives
+assignment.zip
